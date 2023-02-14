@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #eee;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+/* Components CSS*/
+/*Navbar*/
+.navitems__container {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.navitems__list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+.navitem {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.underline {
+  text-decoration: underline;
+}
+
+/*Product Card*/
+.product__container {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  overflow: hidden;
+}
+.product__image {
+  height: 350px;
+  width: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 1rem 0 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+/*---------------*/
+
+.products__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.product__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.proudct__price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.product__btn {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: steelblue;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
